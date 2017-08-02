@@ -3,8 +3,10 @@
 
 ###### - Open a command line window (Windows) or a terminal window (Mac & Linux) 
 
-###### - Type `npm install`, and press Enter
+###### - Type `npm install`, to install npm manager and press Enter
 
-###### - Type `npm start`, and press Enter 
+###### - Type `npm install --save colors`, to install color module
+
+###### - Type `npm start`, to start program and press Enter 
 
 ###### Enjoy!
