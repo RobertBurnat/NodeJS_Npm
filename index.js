@@ -8,7 +8,7 @@ process.stdin.on('readable', () => {
 		let instruction = input.toString().trim();
 		switch(instruction) {
 			case '/exit' :
-				console.log('Quitting app\n');
+				process.stdout.write('Quitting app\n');
 				process.exit();
 			break;
 			case '/version' :
