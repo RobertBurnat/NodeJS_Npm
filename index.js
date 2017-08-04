@@ -1,4 +1,4 @@
-let OSinfo = require('./modules/OSinfo');
+let OSinfo = require('./modules/OSInfo');
 let EventEmitter = require('events').EventEmitter;
 
 let emitter = new EventEmitter();
