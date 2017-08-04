@@ -2,13 +2,9 @@ let OSinfo = require('./modules/OSInfo');
 let EventEmitter = require('events').EventEmitter;
 
 let emitter = new EventEmitter();
-emitter.on('beforeCommand', (instruction) => {
-	console.log('You wrote: ' + instruction.green + ' trying to run command.');
-});
+emitter.on('beforeCommand', (instruction) => console.log('You wrote: ' + instruction.green + ' trying to run command.'));
 
-emitter.on('afterCommand', () => {
-	console.log('Finished Command');
-});
+emitter.on('afterCommand', () => console.log('Finished Command'));
 
 process.stdin.setEncoding('utf-8');
 process.stdin.on('readable', () => {
